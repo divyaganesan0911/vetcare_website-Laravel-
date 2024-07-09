@@ -11,7 +11,9 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="">
 <meta property="og:image" content="">
-<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.ico">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" href="{{ asset('assets/css/main.css')}}">
 <link rel="stylesheet" href="{{ asset('assets/css/custom.css')}}">
 @livewireStyles
@@ -118,15 +120,18 @@
                                             <li><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
                                             <li><a href="{{route('admin.products')}}">Products</a></li>
                                             <li><a href="{{route('admin.categories')}}">Categories</a></li>
-                                            <li><a href="{{route('admin.home.slider')}}">Manage Slider</a></li>
-                                            <li><a href="{{route('admin.coupons')}}">Add Coupons</a></li>
+                                            <li><a href="{{route('admin.home.slider')}}">Sliders</a></li>
+                                            <li><a href="{{route('admin.coupons')}}"> Coupons</a></li>
+                                            <li><a href="{{route('admin.orders')}}">Orders</a></li>
                                             <li><a href="{{route('admin.contact')}}">Contact Messages</a></li>
-                                            <li><a href="#">Orders</a></li>
-                                            <li><a href="#">Customers</a></li>
+                                            
+                                             
                                         </ul>
                                         @else
                                         <ul class="sub-menu">
-                                            <li><a href="{{route('user.dashboard')}}">Dashboard</a></li>                                                                                       
+                                            <li><a href="{{route('user.dashboard')}}">Dashboard</a></li>  
+                                            <li><a href="{{route('users.orders')}}">My Orders</a></li>                                                                                      
+                                            
                                         </ul>
                                          @endif
                                     </li>
@@ -142,6 +147,7 @@
             </div>
         </div>
     </header>
+    
     <div class="mobile-header-active mobile-header-wrapper-style">
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">

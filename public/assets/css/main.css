@@ -9916,6 +9916,63 @@ span.fi-rs-apps {
 	height: 13px !important;
 }
 
+.qurey{
+    display: none;
+    width: 800px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 40px;
+    padding: 2px;
+}
+.qurey-show{
+    display: block;
+}
+.qurey-toggle{
+  position: absolute;
+  left: -103px;
+}
+.qurey-toggle:hover {
+  left: 0px;
+}
+.qurey-toggle .fa-solid{
+  position: relative;
+  left: 18px;
+}
+.close-icon {
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: 270px;
+  top: 72px;
+}
+.close-icon:hover{
+  color: red;
+}
+.btn-danger {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #dc3545;
+  --bs-btn-border-color: #dc3545;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bd2d3b;
+  --bs-btn-hover-border-color: #b02a37;
+  --bs-btn-focus-shadow-rgb: 225,83,97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b02a37;
+  --bs-btn-active-border-color: #a52834;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #dc3545;
+  --bs-btn-disabled-border-color: #dc3545;
+}  
+ .alloverlay{
+  margin-top: 197px;
+  position:absolute;
+ }
+ *,::after ,::before{
+  box-sizing: border-box;
+ }
 @media (max-width:600px)
 {
 	.mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-top .mobile-header-logo a img {

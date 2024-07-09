@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                              @if(Cart::instance('cart')->count() > 0)
+                    @if(Cart::instance('cart')->count() > 0)
                         <div class="table-responsive">
                             @if(Session::has('success_message'))
                                 <div class="alert alert-success">

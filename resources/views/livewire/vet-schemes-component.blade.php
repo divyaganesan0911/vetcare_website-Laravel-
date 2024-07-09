@@ -28,9 +28,7 @@
                                     <article class="first-post mb-30 wow fadeIn animated hover-up">
                                          
                                         <div class="entry-content">
-                                            <div class="entry-meta meta-1 mb-30">
-                                                
-                                            </div>
+                                             
                                             <h2 class="post-title mb-20">
                                                 <a href="blog-details.html">Rashtriya Gokul Mission</a></h2>
                                             <p class="post-exerpt font-medium text-muted mb-30">The Rashtriya Gokul Mission (RGM) is being implemented for development and conservation of indigenous bovine breeds since December 2014. The scheme is important in enhancing milk production and productivity of bovines to meet growing demand of milk and making dairying more remunerative to the rural farmers of the country. The scheme is also continued under umbrella scheme Rashtriya Pashudhan Vikas Yojna from 2021 to 2026 with a budget outlay of Rs.2400 crore. The RGM will result in enhanced productivity and benefit of the programme, percolating to all cattle and buffaloes of India especially with small and marginal farmers. This programme will also benefit women in particular since over 70% of the work involved in livestock farming is undertaken by women.</p>
