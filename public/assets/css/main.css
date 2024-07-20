@@ -9918,13 +9918,19 @@ span.fi-rs-apps {
 
 .qurey{
     display: none;
+    position: absolute;
+    background-color: #ffffff;
     width: 800px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 10px;
     margin: 0 auto;
-    align-items: center;
     margin-top: 40px;
+    left: 400px;
     padding: 2px;
+}
+.blur{
+  display: nonee;
+ filter: blur(1.5rem);
 }
 .qurey-show{
     display: block;
@@ -9944,8 +9950,8 @@ span.fi-rs-apps {
   cursor: pointer;
   font-size: 30px;
   position: absolute;
-  right: 270px;
-  top: 72px;
+  right: 34px;
+  top: 33px;
 }
 .close-icon:hover{
   color: red;

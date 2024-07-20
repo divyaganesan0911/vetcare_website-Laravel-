@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="{{ asset('assets/css/custom.css')}}">
 @livewireStyles
 </head>
-<body>
+<body >
     <header class="header-area header-style-1 header-height-2">
         <div class="header-top header-top-ptb-1 d-none d-lg-block">
             <div class="container">
@@ -113,6 +113,8 @@
                                      <li ><a href="#">Vet Insurances  </a></li>
                                     <li><a href="{{route('shop.cart')}}">Cart </a></li>                                    
                                     <li><a href="{{route('contact')}}">Contact</a></li>
+                                    <li><a href="#"> Queries </a></li>
+                                     {{--<button class="btn qurey-toggle" id="click-btn">Queries <i class="fa-solid fa-comments"></i></button>  --}}
                                     @auth
                                     <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>
                                     @if(Auth::user()->utype =='ADM')
@@ -130,7 +132,8 @@
                                         @else
                                         <ul class="sub-menu">
                                             <li><a href="{{route('user.dashboard')}}">Dashboard</a></li>  
-                                            <li><a href="{{route('users.orders')}}">My Orders</a></li>                                                                                      
+                                            <li><a href="{{route('users.orders')}}">My Orders</a></li>   
+                                                  <li><a href="{{route('users.change-password')}}">Change Password</a></li>                                                                                      
                                             
                                         </ul>
                                          @endif
@@ -147,7 +150,8 @@
             </div>
         </div>
     </header>
-    
+   
+        
     <div class="mobile-header-active mobile-header-wrapper-style">
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">
@@ -234,8 +238,9 @@
             </div>
         </div>
     </div>        
-     {{$slot}}
-
+     <div class="" id="blur">
+         {{$slot}}
+    </div>
     <footer class="main">
         
         <section class="section-padding footer-mid">

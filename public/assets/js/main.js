@@ -646,11 +646,14 @@
 const click = document.getElementById('click-btn')
 const qurey = document.getElementById('qurey')
 const close_icon = document.getElementById('close-icon')
+const blur_content = document.getElementById('blur')
 
 
 click.addEventListener('click', () => {
     qurey.classList.toggle('qurey-show')
+    blur_content.classList.toggle('blur')
 })
 close_icon.addEventListener('click', () => {
     qurey.classList.remove('qurey-show')
+    blur_content.classList.remove('blur')
 })

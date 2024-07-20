@@ -17,6 +17,11 @@ nav .hidden{
 
                     </div>
                     <div class="pannel-body">
+                     @if(Session::has('order_message'))
+                     <div class="alert alert-success" role="alert">
+                     {{Session::get('order_message')}}
+                     </div>
+                     @endif
                     <div class="table-responsive">
                         <table class="table table-stripped">
                             <thead>
@@ -33,9 +38,7 @@ nav .hidden{
                                 <th>Zipcode</th>
                                 <th>Status</th>
                                 <th>Order Date</th>
-                                <th>Action</th>
-                                
-                                
+                                <th colspan="2" class="text-center">Action</th>                                
                                 </tr>
                             </thead>
                             <tbody>
@@ -54,7 +57,30 @@ nav .hidden{
                                         <td>{{($order->status)}}</td>
                                         <td>{{($order->created_at)}}</td>
                                         <td><a href="{{route('admin.orderdetail',['order_id'=>$order->id])}}" class="btn btn-info btn-sm">Details</td>
+                                        {{-- <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Status
+                                                    <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Delivered</a></li>
+                                                        <li><a href="#">Canceled</a></li>
+                                                    </ul>
+                                            </div>
+                                        </td> --}}
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Status
+                                                <span class="caret"></span></button> 
+                                               <ul    class="dropdown-menu">
+                                                    <li><a href="#" wire:click.prevent="updateOrderStaus({{$order->id}},'delivered')">Delivered</a></li>
+                                                    <li><a href="#"wire:click.prevent="updateOrderStaus({{$order->id}},'canceled')">Cancelled</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                       
+
                                     </tr>
+
                                 @endforeach
                             </tbody>
 

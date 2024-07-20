@@ -8,18 +8,73 @@ nav .hidden{
 }
 </style>
     <div class="container" style="padding:30px 0;">
+    <div class="row">
+        <div class="col-md-12">
+         
+            @if(Session::has('order_message'))
+            <div class="alert alert-success" role="alert">
+            {{Session::get('order_message')}}
+            </div>
+            @endif
+
+
+            <div class="panel.panel-default">
+                <div class="panel-heading">
+                    Orders Details
+                </div>
+                <div class="col-md-12">
+                    <a href="{{route('users.orders')}}" class="btn btn-success float-end">My orders</a>
+                    @if($order->status == 'ordered')
+                        <a href="#"wire:click.prevent="cancelOrder" style="margin-right:20px"class="btn btn-warning float-end">Cancel Order</a>
+                        <br/>
+                    @endif
+                      
+                </div>
+            </div>
+        </div>
+        
+
+
         <div class="row">
             <div class="col-md-12">
                 <div class="panel.panel-default">
                     <div class="panel-heading">
                          Orders Items
+                         <br/>
+                        <br/>
+                    </div>
+                     <div class="col-md-12">
+                         <div class="panel-body">
+                                    <table class="table">
+                                        <tr>
+                                        <th>Order ID</th>
+                                        <td>{{$order->id}}</td>
+                                        
+                                        <th>Order Date</th>
+                                        <td>{{$order->created_at}}</td>
+                                        
+                                        <th>Status</th>
+                                        <td>{{$order->status}}</td>
+                                    
+                                        @if($order->status == "delivered")
+                                        <th> Delivery date</th>
+                                        <td>{{$order->delivered_date}}</td>
+                                        @elseif ($order->status == "canceled")
+                                        <th>Order Cancelled date</th>
+                                        <td>{{$order->canceled_date}}</td>
+                                        @endif
+                                        </tr>
+                                    </table>
+                                </div>
+        
+                        <br/>
                     </div>
                      
                     <div class="pannel-body">
                     <div class="table-responsive">
                          <br/>
                         <span>Product Name</span>
-                        <br/>
+                       
                         <br/>
                                 <table class="table shopping-summery text-center clean">
                                     <thead>
@@ -159,4 +214,3 @@ nav .hidden{
     </div>
 
 </div>
-
