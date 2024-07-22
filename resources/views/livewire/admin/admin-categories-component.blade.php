@@ -16,6 +16,7 @@
                 </div>
             </div>
         </div>
+        
         <section class="mt-50 mb-50">
             <div class="container">
                 <div class="row">
@@ -24,9 +25,11 @@
                             <div class="cart-header">
                                 <div class="row">
                                     <div class="col-md-6">
-                                            All Cartegories
+                                    
+                                         
                                     </div>
                                     <div class="col-md-6">
+                                    <br/>
                                         <a href="{{route('admin.category.add')}}" class="btn btn-success float-end">Add New Category</a>
                                     </div>
                                 </div>

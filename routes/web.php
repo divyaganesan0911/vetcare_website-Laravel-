@@ -15,6 +15,7 @@ use App\Http\Livewire\Admin\AdminContactComponent;
 use App\Http\Livewire\Admin\AdminEditCouponComponent;
 use App\Http\Livewire\Admin\AdminOrderComponent;
 use App\Http\Livewire\Admin\AdminOrderDetailsComponent;
+use App\http\Livewire\Admin\AdminQueryComponent;
 use App\Http\Livewire\User\UserChangePasswordComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\User\UserOrderDetailsComponent;
@@ -29,6 +30,7 @@ use App\Http\Livewire\CategoryComponent;
 use App\Http\Livewire\CheckoutComponent;
 use App\Http\Livewire\ThankyouComponent;
 use App\Http\Livewire\ContactComponent;
+use App\Http\Livewire\QueryComponent;
 use App\Http\Livewire\AboutComponent;
 use App\Http\Livewire\VetSchemesComponent;
 use Illuminate\Support\Facades\Route;
@@ -67,6 +69,7 @@ Route::get('/search',SearchComponent::class)->name('product.search');
 Route::get('/thank-you',ThankyouComponent::class)->name('thankyou');
 
 Route::get('/contact-us',ContactComponent::class)->name('contact');
+Route::get('/queries',QueryComponent::class)->name('queries');
 
 Route::get('/about',AboutComponent::class)->name('about');
 Route::get('/vetschemes',VetSchemesComponent::class)->name('vetschemes');
@@ -102,6 +105,8 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/admin/coupon/add',AdminAddCouponComponent::class)->name('admin.addcoupon');
     Route::get('/admin/coupon/edit/{coupon_id}',AdminEditCouponComponent::class)->name('admin.editcoupon');
     Route::get('/admin/contact-us',AdminContactComponent::class)->name('admin.contact');
+    Route::get('/admin/query',AdminQueryComponent::class)->name('admin.query');
+    
     Route::get('/admin/orders',AdminOrderComponent::class)->name('admin.orders');
     Route::get('/admin/orders/{order_id}',AdminOrderDetailsComponent::class)->name('admin.orderdetail');
 });

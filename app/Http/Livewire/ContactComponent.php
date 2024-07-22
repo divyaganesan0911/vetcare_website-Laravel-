@@ -40,9 +40,12 @@ class ContactComponent extends Component
         $contact ->message = $this->message;
         $contact->save();
         session()->flash('message','Thanks ,Your message has been sent successfully!');
+        return redirect()->route('contact');
+        
     }
     public function render()
     {
         return view('livewire.contact-component');
+        
     }
 }

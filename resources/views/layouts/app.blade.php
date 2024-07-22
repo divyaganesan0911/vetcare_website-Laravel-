@@ -42,8 +42,8 @@
                             <div id="news-flash" class="d-inline-block">
                                 <ul>
                                 <li>Unbeatable deals on livestock—up to 50% off! <a href="{{route('shop')}}">View details</a></li>
-                                    <li>Supper Value Deals - Save more with coupons</li>
-                                    <li>Premium Livestock Deals - Save up to 35% today! <a href="{{route('shop')}}">Shop now</a></li>
+                                    <li>Supper Value Deals-Save more with coupons</li>
+                                    <li>Premium Livestock Deals-Save up to 35% today! <a href="{{route('shop')}}">Shop now</a></li>
                                 </ul>
                                     
                             </div>
@@ -113,7 +113,7 @@
                                      <li ><a href="#">Vet Insurances  </a></li>
                                     <li><a href="{{route('shop.cart')}}">Cart </a></li>                                    
                                     <li><a href="{{route('contact')}}">Contact</a></li>
-                                    <li><a href="#"> Queries </a></li>
+                                    <li><a href="{{route('queries')}}"> Queries </a></li>
                                      {{--<button class="btn qurey-toggle" id="click-btn">Queries <i class="fa-solid fa-comments"></i></button>  --}}
                                     @auth
                                     <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>
@@ -126,6 +126,7 @@
                                             <li><a href="{{route('admin.coupons')}}"> Coupons</a></li>
                                             <li><a href="{{route('admin.orders')}}">Orders</a></li>
                                             <li><a href="{{route('admin.contact')}}">Contact Messages</a></li>
+                                            <li><a href="{{route('admin.query')}}">Query Messages</a></li>
                                             
                                              
                                         </ul>

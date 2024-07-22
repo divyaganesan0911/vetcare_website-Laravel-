@@ -7,6 +7,14 @@ nav .hidden{
     display : block !important;
 }
 </style>
+ <div class="page-header breadcrumb-wrap">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/" rel="nofollow">Vet Hub</a>                    
+                    <span></span> Order Details
+                </div>
+            </div>
+        </div>
     <div class="container" style="padding:30px 0;">
     <div class="row">
         <div class="col-md-12">
@@ -14,7 +22,7 @@ nav .hidden{
                   <div class="panel-heading">
                          <div class="row">
                             <div class="col-md-6">
-                                          Oreder Details
+                                          {{-- Oreder Details --}}
                             </div>
                             <div class="col-md-6">
                                 <a href="{{route('admin.orders')}}" class="btn btn-success float-end">All orders</a>

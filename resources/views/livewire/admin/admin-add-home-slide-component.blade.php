@@ -13,6 +13,7 @@
                 <div class="breadcrumb">
                     <a href="/" rel="nofollow">Vet Hub</a>
                     <span></span> Add New Slide
+                    <br/>
                 </div>
             </div>
         </div>
@@ -23,6 +24,8 @@
                         <div class="card">
                             <div class="cart-header">
                                 <div class="col-md-6">
+                                <br/>
+                                <br/>
                                   Add New Slide
                                 </div>
                                 <div class="col-md-11">
