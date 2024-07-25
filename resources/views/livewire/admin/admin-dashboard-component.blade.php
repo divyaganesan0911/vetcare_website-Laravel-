@@ -61,7 +61,7 @@
                 <div class="row">
                   <div class="col-xs-8 text-left">
                     <span class="icon-stat-label">Total Revenue</span>
-                    <span class="icon-stat-value">Rs: 0</span>
+                    <span class="icon-stat-value">Rs: {{$totalRevenue}}</span>
                   </div>   
                   <div class="col-xs-4 text-center">
                     <i class="fa fa-dollar icon-stat-visual bg-primary"></i>
@@ -77,7 +77,7 @@
                 <div class="row">
                   <div class="col-xs-8 text-left">
                     <span class="icon-stat-label">Total Sales</span>
-                    <span class="icon-stat-value">0</span>
+                    <span class="icon-stat-value">{{$totalSales}}</span>
                   </div>    
                   <div class="col-xs-4 text-center">
                     <i class="fa fa-gift icon-stat-visual bg-secondary"></i>
@@ -93,7 +93,7 @@
                 <div class="row">
                   <div class="col-xs-8 text-left">
                     <span class="icon-stat-label">Today Revenue</span>
-                    <span class="icon-stat-value">Rs : 0</span>
+                    <span class="icon-stat-value">Rs :{{$todayRevenue}}</span>
                   </div>    
                   <div class="col-xs-4 text-center">
                     <i class="fa fa-dollar icon-stat-visual bg-primary"></i>
@@ -109,7 +109,7 @@
                 <div class="row">
                   <div class="col-xs-8 text-left">
                     <span class="icon-stat-label">Today Sales</span>
-                    <span class="icon-stat-value">0</span>
+                    <span class="icon-stat-value">{{$todaySales}}</span>
                   </div>    
                   <div class="col-xs-4 text-center">
                     <i class="fa fa-gift icon-stat-visual bg-secondary"></i>
