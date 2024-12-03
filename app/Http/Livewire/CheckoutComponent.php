@@ -159,9 +159,12 @@ class CheckoutComponent extends Component
         Cart::instance('cart')->destroy();
         session()->forget('checkout');
 
-         
+         $this->sendOrderConfirmationMail($order);
     }
+    // public function sendOrderConfrimationMail($order){
+    //     Mail::to('dg09112002@gmail.com')->send(new OrderMail($order));
 
+    // }
 
     public function verifyForCheckout()
     {
@@ -179,10 +182,10 @@ class CheckoutComponent extends Component
         }
     }
 
-    // public function sendOrderConfirmationMail($order)
-    // {
-    //     Mail::to($order->email)->send(new OrderMail($order));
-    // }
+     public function sendOrderConfirmationMail($order)
+     {
+         Mail::to($order->email)->send(new OrderMail($order));
+     }
 
     public function render()
     {

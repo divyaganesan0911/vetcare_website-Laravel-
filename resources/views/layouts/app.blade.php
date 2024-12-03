@@ -28,11 +28,11 @@
                         <ul>
                                 <li>
                                     <a class="language-dropdown-active" href="#"> <i class="fi-rs-world"></i> English <i class="fi-rs-angle-small-down"></i></a>
-                                    <ul class="language-dropdown">
+                                    {{-- <ul class="language-dropdown">
                                         <li><a href="#"><img src="assets/imgs/theme/flag-fr.png" alt="">Français</a></li>
                                         <li><a href="#"><img src="assets/imgs/theme/flag-dt.png" alt="">Deutsch</a></li>
                                         <li><a href="#"><img src="assets/imgs/theme/flag-ru.png" alt="">Pусский</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>                                
                             </ul>
                         </div>
@@ -108,12 +108,13 @@
                                     <li><a class="active" href="/">vet Hub</a></li>
                                     {{-- <li><a href="{{route('about')}}">About</a></li> --}}
                                     <li><a href="{{route('shop')}}">Cattle Mart</a></li>
-                                     <li ><a href="#">Vet Visit  </a></li>
+                                     {{-- <li ><a href="#">Vet Visit  </a></li> --}}
                                      <li ><a href="{{route('vetschemes')}}">Vet Schemes  </a></li>
-                                     <li ><a href="#">Vet Insurances  </a></li>
+                                     {{-- <li ><a href="#">Vet Insurances  </a></li> --}}
                                     <li><a href="{{route('shop.cart')}}">Cart </a></li>                                    
                                     <li><a href="{{route('contact')}}">Contact</a></li>
                                     <li><a href="{{route('queries')}}"> Queries </a></li>
+                                    {{-- <li><a href="{{route('about')}}"> About Us </a></li> --}}
                                      {{--<button class="btn qurey-toggle" id="click-btn">Queries <i class="fa-solid fa-comments"></i></button>  --}}
                                     @auth
                                     <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>

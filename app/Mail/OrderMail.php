@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Order; // Make sure to import your Order model
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -13,18 +14,18 @@ class OrderMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public  $order;
+    public Order $order;
 
     /**
      * Create a new message instance.
      *
+     * @param Order $order
      * @return void
      */
-   public function __construct( $order)
-{
-    $this->order = $order;
-}
-
+    public function __construct(Order $order)
+    {
+        $this->order = $order;
+    }
 
     /**
      * Get the message envelope.
@@ -34,7 +35,7 @@ class OrderMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Order Mail',
+            subject: 'Order Confirmation', // Here you can set your subject directly
         );
     }
 
@@ -46,7 +47,8 @@ class OrderMail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            view: 'mails.order-mail', // Assuming your email content view is `mails.order-mail`
+            with: ['order' => $this->order] // Passing the order data to the view
         );
     }
 
@@ -58,10 +60,5 @@ class OrderMail extends Mailable
     public function attachments()
     {
         return [];
-    }
-
-    public function build()
-    {
-        return $this->subject('Order Confirmation')->view('mails.order-mail');
     }
 }

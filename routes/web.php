@@ -34,7 +34,7 @@ use App\Http\Livewire\QueryComponent;
 use App\Http\Livewire\AboutComponent;
 use App\Http\Livewire\VetSchemesComponent;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\OrderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -74,7 +74,7 @@ Route::get('/queries',QueryComponent::class)->name('queries');
 Route::get('/about',AboutComponent::class)->name('about');
 Route::get('/vetschemes',VetSchemesComponent::class)->name('vetschemes');
   
-
+Route::get('/create-order', [OrderController::class, 'createOrder']);
 
 
 

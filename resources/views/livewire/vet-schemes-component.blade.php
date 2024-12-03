@@ -1,3 +1,102 @@
+{{-- <div>
+    <main class="main">
+        <div class="page-header breadcrumb-wrap">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/" rel="nofollow">Vet Hub</a>
+                    <span></span> Vet Schemes
+                </div>
+            </div>
+        </div>
+        <section class="mt-50 mb-50">
+            <div class="container custom">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="single-header mb-50">
+                            <div class="entry-meta meta-1 font-xs mt-15 mb-15">
+                                <span class="post-by">Vetcare Info center</span>
+                                <span class="post-on has-dot">Schemes</span>
+                                <span class="time-reading has-dot">Programmes</span>
+                                <span class="hit-count has-dot">Check them</span>
+                            </div>
+                        </div>
+
+                        <!-- Loop for each Scheme -->
+                        <div class="loop-grid pr-30">
+                            <div class="row">
+                                <div class="col-12">
+                                    <article class="first-post mb-30 wow fadeIn animated hover-up">
+                                        <div class="entry-content">
+                                            <h2 class="post-title mb-20">
+                                                <a href="blog-details.html">Rashtriya Gokul Mission</a>
+                                            </h2>
+                                            <p class="post-exerpt font-medium text-muted mb-30">
+                                                The Rashtriya Gokul Mission (RGM) is being implemented for development and conservation of indigenous bovine breeds since December 2014...
+                                            </p>
+                                            <div class="mb-20 entry-meta meta-2">
+                                                <a href="https://dahd.gov.in/schemes/programmes/rashtriya_gokul_mission" target="_blank"class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="loop-grid pr-30">
+                            <div class="row">
+                                <div class="col-12">
+                                    <article class="first-post mb-30 wow fadeIn animated hover-up">
+                                        <div class="entry-content">
+                                            <h2 class="post-title mb-20">
+                                                <a href="blog-details.html">National Livestock Mission</a>
+                                            </h2>
+                                            <p class="post-exerpt font-medium text-muted mb-30">
+                                                The focus of the scheme is on entrepreneurship development and breed improvement in poultry, sheep, goat and piggery...
+                                            </p>
+                                            <div class="mb-20 entry-meta meta-2">
+                                                <a href="https://dahd.gov.in/schemes/programmes/national_livestock_mission" target="_blank" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More posts go here with the same structure -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div> --}}
+
+<style>
+    /* Add custom styles here */
+    .main {
+        font-family: Arial, sans-serif;
+    }
+    .breadcrumb {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .post-title {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .post-exerpt {
+        font-size: 16px;
+        color: #6c757d;
+    }
+    .entry-meta {
+        font-size: 14px;
+        color: #999;
+    }
+    .btn-sm {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+</style> 
 <div>
      <main class="main">
         <div class="page-header breadcrumb-wrap">
@@ -34,7 +133,7 @@
                                             <p class="post-exerpt font-medium text-muted mb-30">The Rashtriya Gokul Mission (RGM) is being implemented for development and conservation of indigenous bovine breeds since December 2014. The scheme is important in enhancing milk production and productivity of bovines to meet growing demand of milk and making dairying more remunerative to the rural farmers of the country. The scheme is also continued under umbrella scheme Rashtriya Pashudhan Vikas Yojna from 2021 to 2026 with a budget outlay of Rs.2400 crore. The RGM will result in enhanced productivity and benefit of the programme, percolating to all cattle and buffaloes of India especially with small and marginal farmers. This programme will also benefit women in particular since over 70% of the work involved in livestock farming is undertaken by women.</p>
                                             <div class="mb-20 entry-meta meta-2">
                                                 
-                                                <a href="https://dahd.nic.in/schemes/programmes/rashtriya_gokul_mission" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
+                                                <a href="https://dahd.gov.in/schemes/programmes/rashtriya_gokul_mission"target="_blank" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
                                             </div>
                                         </div>
                                     </article>
@@ -59,7 +158,7 @@
                                                 Sub-Mission on Extension and Innovation</p>
                                             <div class="mb-20 entry-meta meta-2">
                                                 
-                                                <a href="https://dahd.nic.in/schemes/programmes/national_livestock_mission" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
+                                                <a href="https://dahd.gov.in/schemes/programmes/national_livestock_mission"target="_blank" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
                                             </div>
                                         </div>
                                     </article>
@@ -82,7 +181,7 @@
                                             </p>
                                             <div class="mb-20 entry-meta meta-2">
                                                 
-                                                <a href="https://dahd.nic.in/schemes-programmes/lh-dc" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
+                                                <a href="https://dahd.gov.in/schemes-programmes/lh-dc" target="_blank"class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
                                             </div>
                                         </div>
                                     </article>
@@ -104,7 +203,7 @@
                                             </p>
                                             <div class="mb-20 entry-meta meta-2">
                                                 
-                                                <a href="https://dahd.nic.in/schemes/programmes/animal-husbandry-statistics" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
+                                                <a href="https://dahd.gov.in/schemes/programmes/animal-husbandry-statistics"target="_blank" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
                                             </div>
                                         </div>
                                     </article>
@@ -125,7 +224,7 @@
                                             <p class="post-exerpt font-medium text-muted mb-30">National Animal Disease Control Programme (NADCP) is a flagship scheme launched by Hon'ble Prime Minister in September, 2019 for control of Foot & Mouth Disease and Brucellosis by vaccinating 100% cattle, buffalo, sheep, goat and pig population for FMD and 100% bovine female calves of 4-8 months of age for brucellosis with the total outlay of Rs.13, 343.00 crore for five years (2019-20 to 2023-24).</p>
                                             <div class="mb-20 entry-meta meta-2">
                                                 
-                                                <a href="https://dahd.nic.in/schemes/programmes/nadcp" class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
+                                                <a href="https://dahd.gov.in/schemes/programmes/nadcp#:~:text=National%20Animal%20Disease%20Control%20Programme%20(NADCP)%20is%20a%20flagship%20scheme,months%20of%20age%20for%20brucellosis" target="_blank"class="btn btn-sm">Read more<i class="fi-rs-arrow-right ml-10"></i></a>
                                             </div>
                                         </div>
                                     </article>
@@ -152,3 +251,5 @@
         </section>
     </main>
 </div>
+<style>
+<\style>
